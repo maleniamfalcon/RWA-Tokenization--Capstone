@@ -2,7 +2,7 @@
 #include <sqlite3.h>
 
 // Full path to the database file. Change this one line if the file moves.
-static const char* DB_PATH = "/Users/maleniam_falcon/RWATOK/rwa_engine.db";
+static const char* DB_PATH = "/Users/maleniam_falcon/RWATOK/RWATOKDB";
 
 // Opens the database with foreign keys enforced. Returns nullptr on failure.
 // "static" keeps this helper private to this file.
@@ -73,3 +73,4 @@ bool saveHolderToDb(const Holder& h) {
     sqlite3_close(db);
     return ok;
 }
+

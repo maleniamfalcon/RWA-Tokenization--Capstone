@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C77229F4306A158E0082316E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C77229F2306A158E0082316E /* libsqlite3.tbd */; };
+		C77229F5306A158E0082316E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C77229F3306A158E0082316E /* libsqlite3.0.tbd */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		C7127A233059F05000EFCB39 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		C7127A253059F05000EFCB39 /* RWA Tokenization */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "RWA Tokenization"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C77229F2306A158E0082316E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C77229F3306A158E0082316E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -35,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C77229F4306A158E0082316E /* libsqlite3.tbd in Frameworks */,
+				C77229F5306A158E0082316E /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				C7127A273059F05000EFCB39 /* RWA Tokenization */,
+				C77229EC306A13B70082316E /* Frameworks */,
 				C7127A263059F05000EFCB39 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +65,15 @@
 				C7127A253059F05000EFCB39 /* RWA Tokenization */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C77229EC306A13B70082316E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C77229F2306A158E0082316E /* libsqlite3.tbd */,
+				C77229F3306A158E0082316E /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,7 +108,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 2610;
+				LastUpgradeCheck = 2700;
 				TargetAttributes = {
 					C7127A243059F05000EFCB39 = {
 						CreatedOnToolsVersion = 26.1;
@@ -160,6 +179,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = GYT36R8Z4U;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -185,6 +205,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 			};
 			name = Debug;
 		};
@@ -222,6 +243,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = GYT36R8Z4U;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -240,6 +262,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 			};
 			name = Release;
 		};
@@ -247,6 +270,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = GYT36R8Z4U;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -257,6 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = GYT36R8Z4U;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
